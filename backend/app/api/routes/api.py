@@ -9,6 +9,7 @@ router.include_router(authentication.router, tags=["authentication"], prefix="/u
 router.include_router(users.router, tags=["users"], prefix="/user")
 router.include_router(profiles.router, tags=["profiles"], prefix="/profiles")
 router.include_router(items.router, tags=["items"])
+router.include_router(items.router, tags=["title"])
 router.include_router(
     comments.router,
     tags=["comments"],
